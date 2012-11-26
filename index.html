@@ -1,1 +1,104 @@
-hi
+<!doctype html>
+<html>
+<head>
+  <title></title>
+  <style type="text/css">
+  @keyframes myfirst
+{
+0%   {opacity: 1;}
+100% {opacity: 0;}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+0%   {opacity: 1;}
+100% {opacity: 0;}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+0%   {opacity: 1;}
+100% {opacity: 0;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+0%   {opacity: 1;}
+100% {opacity: 0;}
+}
+    .octo-spinner {
+      display: block;
+      width: 46px;
+      height: 46px;
+      position: relative;
+      float: left;
+      margin-right: 40px;
+    }
+    .octo-spinner span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 1;
+      -webkit-animation-name: myfirst;
+-webkit-animation-duration: 1s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-direction: alternate;
+-webkit-animation-play-state: running;
+    }
+    .octo-frame-1 {
+      border-top: 5px solid red;
+-webkit-animation-delay: 0s;
+    }
+    .octo-frame-2 {
+      border-right: 5px solid blue;
+-webkit-animation-delay: 0.5s;
+    }
+    .octo-frame-3 {
+      border-bottom: 5px solid green;
+-webkit-animation-delay: 1s;
+    }
+    .octo-frame-4 {
+      border-left: 5px solid yellow;
+-webkit-animation-delay: 1.5s;
+    }
+  </style>
+</head>
+<body>
+
+<span class="octo-spinner" style="width:128px;height:128px;">
+  <span class="octo-frame-1"></span>
+  <span class="octo-frame-2"></span>
+  <span class="octo-frame-3"></span>
+  <span class="octo-frame-4"></span>
+  <span class="octo-frame-cat"></span>
+</span>
+
+<span class="octo-spinner" style="width:64px;height:64px;">
+  <span class="octo-frame-1"></span>
+  <span class="octo-frame-2"></span>
+  <span class="octo-frame-3"></span>
+  <span class="octo-frame-4"></span>
+  <span class="octo-frame-cat"></span>
+</span>
+
+<span class="octo-spinner" style="width:32px;height:32px;">
+  <span class="octo-frame-1"></span>
+  <span class="octo-frame-2"></span>
+  <span class="octo-frame-3"></span>
+  <span class="octo-frame-4"></span>
+  <span class="octo-frame-cat"></span>
+</span>
+
+<span class="octo-spinner" style="width:16px;height:16px;">
+  <span class="octo-frame-1"></span>
+  <span class="octo-frame-2"></span>
+  <span class="octo-frame-3"></span>
+  <span class="octo-frame-4"></span>
+  <span class="octo-frame-cat"></span>
+</span>
+
+</body>
+</html>
